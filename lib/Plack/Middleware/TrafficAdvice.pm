@@ -1,5 +1,7 @@
 package Plack::Middleware::TrafficAdvice;
 
+# ABSTRACT: handle requests for /.well-known/traffic-advice
+
 use v5.8.5;
 
 use strict;
@@ -14,6 +16,47 @@ use File::Temp qw/ tempfile /;
 use HTTP::Date;
 use HTTP::Status qw/ :constants /;
 use JSON::MaybeXS;
+
+our $VERSION = 'v0.1.0';
+
+=head1 SYNOPSIS
+
+  use JSON::MaybeXS;
+  use Plack::Builder;
+
+  builder {
+
+    enable "TrafficAdvice",
+      data => [
+        {
+            user_agent => "prefetch-proxy",
+            disallow   => JSON::MaybeXS->true,
+        }
+      ];
+
+    ...
+
+  };
+
+=head1 DESCRIPTION
+
+This middle provides a handler for requests for C</.well-known/traffic-advice>.
+
+You must specify either a L</file> or L</data> containing the traffic
+advice information.
+
+=attr data
+
+This is either an array referece that corresponds to the traffic advice data structure,
+or a JSON string to return.
+
+The data will be saved as a temporary L</file>.
+
+=attr file
+
+This is a file containing the JSON string to return.
+
+=cut
 
 sub prepare_app {
     my ($self) = @_;
@@ -88,9 +131,19 @@ sub call {
 
 }
 
+=for Pod::Coverage error
+
+=cut
+
 sub error {
     my ($self, $code, $message) = @_;
     return [ $code, [ 'Content-Type' => 'text/plain', 'Content-Length' => length($message) ], [ $message ] ];
 }
 
 1;
+
+=head1 SEE ALSO
+
+L<https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md>
+
+=cut

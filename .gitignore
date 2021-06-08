@@ -1,1 +1,4 @@
 traffic-advice-*.json
+Plack-Middleware-TrafficAdvice-v*/
+Plack-Middleware-TrafficAdvice-v*.tar.gz
+.build/
