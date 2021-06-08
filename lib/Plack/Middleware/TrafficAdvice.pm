@@ -24,7 +24,7 @@ sub prepare_app {
             die "Cannot specify both data and file";
         }
 
-        my ($fh, $filename) = tempfile('traffic-advice-XXXXXXXX', SUFFIX => '.json', UNLINK => 0);
+        my ($fh, $filename) = tempfile('traffic-advice-XXXXXXXX', SUFFIX => '.json', UNLINK => 0, TMPDIR => 1);
         $self->file( $filename );
 
         if (ref($data)) {
