@@ -104,7 +104,7 @@ sub call {
         return $self->app->($env);
     }
 
-    unless ( $env->{REQUEST_METHOD} eq 'GET' ) {
+    unless ( $env->{REQUEST_METHOD} =~ /^(GET|HEAD)$/ ) {
         return $self->error( HTTP_METHOD_NOT_ALLOWED, "Not Allowed" );
     }
 
