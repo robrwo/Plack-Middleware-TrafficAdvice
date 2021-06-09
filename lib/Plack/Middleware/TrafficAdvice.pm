@@ -17,7 +17,7 @@ use HTTP::Date;
 use HTTP::Status qw/ :constants /;
 use JSON::MaybeXS 1.004000;
 
-our $VERSION = 'v0.2.0';
+our $VERSION = 'v0.2.1';
 
 =head1 SYNOPSIS
 
