@@ -15,7 +15,7 @@ use Cwd;
 use File::Temp qw/ tempfile /;
 use HTTP::Date;
 use HTTP::Status qw/ :constants /;
-use JSON::MaybeXS;
+use JSON::MaybeXS 1.004000;
 
 our $VERSION = 'v0.1.1';
 
