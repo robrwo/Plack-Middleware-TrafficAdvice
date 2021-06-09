@@ -8,6 +8,9 @@ Revision history for {{ $dist->name }}:
  - Specified minimum version of JSON::MaybeXS so that SYNOPSIS and
    tests work properly.
 
+ [Documentation]
+ - Add KNOWN ISSUES section.
+
  [Tests]
  - Add more tests.
 

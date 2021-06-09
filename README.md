@@ -47,6 +47,13 @@ The data will be saved as a temporary ["file"](#file).
 
 This is a file containing the JSON string to return.
 
+# KNOWN ISSUES
+
+The `/.well-known/traffic-advice` specification is new and may be subject to change.
+
+This does not validate that the ["data"](#data) string or ["file"](#file) contains
+valid JSON, or that the JSON conforms to the specification.
+
 # SEE ALSO
 
 [https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md](https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md)

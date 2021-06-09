@@ -142,6 +142,13 @@ sub error {
 
 1;
 
+=head1 KNOWN ISSUES
+
+The C</.well-known/traffic-advice> specification is new and may be subject to change.
+
+This does not validate that the L</data> string or L</file> contains
+valid JSON, or that the JSON conforms to the specification.
+
 =head1 SEE ALSO
 
 L<https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md>
