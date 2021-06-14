@@ -9,7 +9,7 @@ version v0.2.1
 # SYNOPSIS
 
 ```perl
-use JSON::MaybeXS;
+use JSON::MaybeXS 1.004000;
 use Plack::Builder;
 
 builder {
