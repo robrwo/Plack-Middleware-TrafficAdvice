@@ -43,7 +43,7 @@ our $VERSION = 'v0.2.1';
 This middle provides a handler for requests for C</.well-known/traffic-advice>.
 
 You must specify either a L</file> or L</data> containing the traffic
-advice information.
+advice information. (There is no default value.)
 
 =attr data
 

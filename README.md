@@ -32,7 +32,7 @@ builder {
 This middle provides a handler for requests for `/.well-known/traffic-advice`.
 
 You must specify either a ["file"](#file) or ["data"](#data) containing the traffic
-advice information.
+advice information. (There is no default value.)
 
 # ATTRIBUTES
 
