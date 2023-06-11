@@ -54,6 +54,12 @@ The `/.well-known/traffic-advice` specification is new and may be subject to cha
 This does not validate that the ["data"](#data) string or ["file"](#file) contains
 valid JSON, or that the JSON conforms to the specification.
 
+# SUPPORT FOR OLDER PERL VERSIONS
+
+This module requires Perl v5.8.5 or later.
+
+Future releases may only support Perl versions released in the last ten years.
+
 # SEE ALSO
 
 [https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md](https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md)

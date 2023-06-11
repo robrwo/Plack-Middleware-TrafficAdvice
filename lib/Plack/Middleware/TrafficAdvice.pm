@@ -149,6 +149,12 @@ The C</.well-known/traffic-advice> specification is new and may be subject to ch
 This does not validate that the L</data> string or L</file> contains
 valid JSON, or that the JSON conforms to the specification.
 
+=head1 SUPPORT FOR OLDER PERL VERSIONS
+
+This module requires Perl v5.8.5 or later.
+
+Future releases may only support Perl versions released in the last ten years.
+
 =head1 SEE ALSO
 
 L<https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md>
