@@ -4,7 +4,7 @@ Plack::Middleware::TrafficAdvice - handle requests for /.well-known/traffic-advi
 
 # VERSION
 
-version v0.2.4
+version v0.2.5
 
 # SYNOPSIS
 
