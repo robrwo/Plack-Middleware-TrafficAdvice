@@ -1,10 +1,12 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Correct typo in Changes for v0.2.5: Plack minimum version has not changed.
 
 v0.2.5    2023-10-28 09:50:44+01:00 Europe/London
   [Incompatible Changes]
-  - Bumped minimum Perl version to v5.12, in line with the minimum Plack version.
+  - Bumped minimum Perl version to v5.12.
 
   [Tests]
   - Enabled "use strict" Kwalitee test.
