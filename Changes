@@ -7,6 +7,10 @@ Revision history for {{ $dist->name }}:
   [Tests]
   - Enabled "use strict" Kwalitee test.
 
+  - Migrated to Test2.
+
+  - Removed use of Test::Most.
+
 v0.2.4    2023-06-11 14:33:50+01:00 Europe/London
   [Documentation]
   - Document support policy for older Perl versions.

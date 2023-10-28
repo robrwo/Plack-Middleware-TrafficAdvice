@@ -3,7 +3,8 @@ use utf8;
 use v5.12;
 use warnings;
 
-use Test::Most;
+use Test2::V0;
+use Test2::Tools::Compare qw/ bool /;
 
 use HTTP::Request::Common;
 use HTTP::Status qw/ :constants /;
@@ -33,7 +34,7 @@ test_psgi
 
     my $data = decode_json( $res->decoded_content );
 
-    cmp_deeply $data,
+    is $data,
       [
         {
             user_agent => "prefetch-proxy",

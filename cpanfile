@@ -18,9 +18,10 @@ on 'test' => sub {
   requires "Plack::Builder" => "0";
   requires "Plack::Middleware::ContentLength" => "0";
   requires "Plack::Test" => "0";
+  requires "Test2::Tools::Compare" => "0";
+  requires "Test2::V0" => "0";
   requires "Test::Differences" => "0";
   requires "Test::More" => "0";
-  requires "Test::Most" => "0";
   requires "strict" => "0";
   requires "utf8" => "0";
 };
