@@ -2,9 +2,7 @@ package Plack::Middleware::TrafficAdvice;
 
 # ABSTRACT: handle requests for /.well-known/traffic-advice
 
-use v5.8.5;
-
-use strict;
+use v5.12;
 use warnings;
 
 use parent 'Plack::Middleware';

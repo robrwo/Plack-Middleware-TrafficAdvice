@@ -8,8 +8,7 @@ requires "HTTP::Status" => "0";
 requires "JSON::MaybeXS" => "1.004000";
 requires "Plack::Middleware" => "0";
 requires "parent" => "0";
-requires "perl" => "v5.8.5";
-requires "strict" => "0";
+requires "perl" => "v5.12.0";
 requires "warnings" => "0";
 
 on 'test' => sub {
@@ -22,6 +21,7 @@ on 'test' => sub {
   requires "Test::Differences" => "0";
   requires "Test::More" => "0";
   requires "Test::Most" => "0";
+  requires "strict" => "0";
   requires "utf8" => "0";
 };
 

@@ -1,6 +1,6 @@
 use utf8;
 
-use strict;
+use v5.12;
 use warnings;
 
 use Test::Most;
