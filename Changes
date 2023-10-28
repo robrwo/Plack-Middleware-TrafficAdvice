@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Incompatible Changes]
   - Bumped minimum Perl version to v5.12, in line with the minimum Plack version.
 
+  [Tests]
+  - Enabled "use strict" Kwalitee test.
+
 v0.2.4    2023-06-11 14:33:50+01:00 Europe/London
   [Documentation]
   - Document support policy for older Perl versions.
