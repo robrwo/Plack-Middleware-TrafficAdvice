@@ -56,7 +56,7 @@ valid JSON, or that the JSON conforms to the specification.
 
 # SUPPORT FOR OLDER PERL VERSIONS
 
-This module requires Perl v5.8.5 or later.
+This module requires Perl v5.12 or later.
 
 Future releases may only support Perl versions released in the last ten years.
 
