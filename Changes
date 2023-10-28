@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.2.5    2023-10-28 09:50:44+01:00 Europe/London
   [Incompatible Changes]
   - Bumped minimum Perl version to v5.12, in line with the minimum Plack version.
 
