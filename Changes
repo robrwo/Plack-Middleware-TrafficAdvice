@@ -9,6 +9,8 @@ Revision history for {{ $dist->name }}:
 
   - Add author tests for Changes.
 
+  - Removed unnecessary test prerequisite.
+
   [Other]
   - Version bumped to v0.3.0 due to bump in minimum Perl version in v0.2.5.
 
