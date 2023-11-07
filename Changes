@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Correct typo in Changes for v0.2.5: Plack minimum version has not changed.
 
+  [Tests]
+  - Switched package used for the release manifest.
+
   [Other]
   - Version bumped to v0.3.0 due to bump in minimum Perl version in v0.2.5.
 
