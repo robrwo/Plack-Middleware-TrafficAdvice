@@ -157,4 +157,11 @@ Future releases may only support Perl versions released in the last ten years.
 
 L<https://github.com/buettner/private-prefetch-proxy/blob/main/traffic-advice.md>
 
+=head1 append:BUGS
+
+=head2 Reporting Security Vulnerabilities
+
+Security issues should not be reported on the bugtracker website. Please see F<SECURITY.md> for instructions how to
+report security vulnerabilities
+
 =cut
