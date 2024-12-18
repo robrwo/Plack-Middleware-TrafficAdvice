@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Add a security policy.
 
+  - Update copyright year.
+
   [Other]
   - Dist::Zilla::Plugin::Generate::ManifestSkip is no longer used.
 
